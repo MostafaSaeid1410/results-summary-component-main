@@ -1,0 +1,206 @@
+/*
+
+   ----- 01-TYPOGRAPHY SYSTEM
+  -Font size system (px)
+     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+   
+
+  - Font weights:  
+     Default: 400;
+     Medium: 500
+     semi-bold: 600
+     bold: 700
+   
+  - Line height: 
+     DEFAULT: 1
+     small: 1.05
+     medium: 1.2
+     paragraph default: 1.6
+
+  -Letter spacing 
+     0.75PX 
+     0.5PX
+
+
+   ---- 02-COLORS
+   - Primary:
+   - Tints:
+
+   - Shades:
+
+   - Greys:
+
+   
+   ---- 03-SHADOWS
+
+   ---- 04-BORDER-RADIUS
+    - Default: 9px // because we don't want to scale it up or down
+   ---- 05-WHITESPACES
+
+
+   SPACING SYSTEM (px)
+   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  
+  
+   ---- 0
+  
+   ---- 0
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1.8rem;
+}
+article {
+  /* width: 144rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  /* background-color: orange; */
+  /* width: 52rem; */
+  /* height: 52rem; */
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 37rem 37rem;
+  border-radius: 3.2rem;
+  overflow: hidden;
+  box-shadow: 0 0 3rem #0000002e;
+}
+
+.result {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* gap: 2.4rem; */
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 3.2rem;
+  padding: 4.8rem 2rem;
+  color: #c8c7ff;
+  background-image: linear-gradient(to bottom, #7857ff, #2e2be9);
+  border-radius: 3.2rem;
+}
+
+h2 {
+  color: #c8c7ff;
+  font-size: 2.4rem;
+}
+
+.result-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  background-color: #4e21ca;
+  color: #c8c7ff;
+  border-radius: 50%;
+  max-height: 20rem;
+  max-width: 20rem;
+  padding: 3.2rem;
+  margin: 1.6rem;
+  line-height: 1.05;
+  background-image: linear-gradient(to bottom, #4e21ca, #2e2be9);
+}
+.number {
+  display: block;
+  font-size: 8.6rem;
+  color: #fff;
+}
+
+.result-text {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+.result-summary {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: -1.2rem;
+  text-align: center;
+  padding: 0 2.4rem;
+}
+
+.summary {
+  padding: 4.8rem 2rem;
+}
+.summary-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 3.2rem;
+}
+.summary h2 {
+  color: #000;
+  align-self: flex-start;
+}
+
+.result-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.result-item {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem;
+  border-radius: 20px;
+}
+
+.evaluation {
+  color: #000;
+}
+.evaluation span {
+  color: #727c98;
+}
+.red {
+  background-color: #ffdddd;
+  color: #ff5757;
+}
+
+.orange {
+  background-color: #ffefd2;
+  color: #ffb01f;
+}
+
+.green {
+  background-color: #ccf2e9;
+  color: #00bd91;
+}
+
+.blue {
+  background-color: #cfd3f6;
+  color: #1125d4;
+}
+
+.head {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.submit {
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  border-radius: 200px;
+  background-color: #303b5a;
+  padding: 1.6rem 3.2rem;
+}
